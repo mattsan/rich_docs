@@ -1,5 +1,11 @@
 <h1>Book: <%= @book.title %></h1>
 <%= link_to 'index', books_path %>
+<% if @book.epub.attached? %>
+  <%= link_to 'update epub', book_epub_path(@book), method: :post, class: 'button' %>
+  <%= link_to 'download epub', book_epub_path(@book), class: 'button' %>
+<% else %>
+  <%= link_to 'generate epub', book_epub_path(@book), method: :post, class: 'button' %>
+<% end %>
 <ol>
   <% @book.chapters.each do |chapter| %>
     <li><%= link_to chapter.title, chapter_path(chapter) %></li>

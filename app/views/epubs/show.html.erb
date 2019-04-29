@@ -1,0 +1,14 @@
+<h1>EPUB: <%= @book.title %></h1>
+<%= link_to 'book', @book %>
+<table>
+  <thead>
+    <th>attribute</th>
+  </thead>
+  <tbody>
+    <tr><td><%= @book.epub.filename %></td></tr>
+    <tr><td><%= @book.epub.byte_size %> bytes</td></tr>
+    <tr><td><%= @book.epub.checksum %></td></tr>
+    <tr><td><%= @book.epub.created_at.localtime.strftime('%Y/%m/%d %H:%M') %></td></tr>
+  </tbody>
+</table>
+<%= link_to 'download', book_epub_path(@book, format: :epub), class: 'button' %>
