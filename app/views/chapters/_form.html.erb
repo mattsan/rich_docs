@@ -1,0 +1,7 @@
+<%= form_with(model: chapter) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.rich_text_area :content %>
+  <%= f.submit %>
+<% end %>
