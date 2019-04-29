@@ -6,6 +6,7 @@ ruby '2.6.2'
 gem 'rails', '~> 6.0.0.rc1'
 
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'font-awesome-rails'
 gem 'gepub'
 gem 'jbuilder', '~> 2.5'
 gem 'milligram'

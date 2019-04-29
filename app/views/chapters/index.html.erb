@@ -4,7 +4,9 @@
 <ul>
   <% @chapters.each do |chapter| %>
     <li>
-      <%= link_to 'edit', edit_chapter_path(chapter), class: 'button' %>
+      <%= link_to edit_chapter_path(chapter) do %>
+        <%= fa_icon 'edit' %>
+      <% end %>
       <%= link_to chapter.title, chapter_path(chapter) %>
     </li>
   <% end %>

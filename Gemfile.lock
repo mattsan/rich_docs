@@ -78,6 +78,8 @@ GEM
     crass (1.0.4)
     erubi (1.8.0)
     ffi (1.10.0)
+    font-awesome-rails (4.7.0.5)
+      railties (>= 3.2, < 6.1)
     gepub (1.0.3)
       nokogiri (>= 1.8.2, < 1.11)
       rubyzip (>= 1.1.1)
@@ -219,6 +221,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   capybara (>= 2.15)
+  font-awesome-rails
   gepub
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
